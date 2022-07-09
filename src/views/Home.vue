@@ -90,8 +90,6 @@ a {
 .main-container {
 	text-align: center;
 }
-#app {
-}
 #clear {
 	position: relative;
 	font-size: 12px;
