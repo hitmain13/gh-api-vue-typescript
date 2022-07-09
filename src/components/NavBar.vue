@@ -10,7 +10,7 @@ export default {
 
 <template>
 	<nav class="navbar navbar-dark bg-dark navbar-expand-xl">
-		<div class="logo-container">
+		<div v-on:click="this.$router.push(`/`)" class="logo-container">
 			<IconGithub class="github-icon" />
 			<h3 class="title"><strong>Github</strong> Search Profile</h3>
 		</div>
