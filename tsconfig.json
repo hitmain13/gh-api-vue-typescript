@@ -2,6 +2,15 @@
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
+    "outDir": "./built/",
+    "sourceMap": true,
+    "strict": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "target": "es5",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": false,
     "types": ["vite-svg-loader", "vite/client"],
     "baseUrl": ".",
     "paths": {
@@ -16,3 +25,4 @@
     }
   ],
 }
+
