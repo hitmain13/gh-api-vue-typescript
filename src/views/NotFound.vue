@@ -1,16 +1,10 @@
-<script>
-import SVGNotFound from "../components/icons/NotFound.vue";
-
+<script lang="ts">
 export default {
-	components: {
-		SVGNotFound,
-	},
+	name: "NotFound",
 };
 </script>
-
 <template>
 	<main>
-		<SVGNotFound />
 		<h2>NOT FOUNDD</h2>
 	</main>
 </template>

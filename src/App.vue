@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import { RouterLink, RouterView } from "vue-router";
+
 import NavBar from "@/components/NavBar.vue";
 </script>
 
 <template>
 	<NavBar />
-	<NotFound/>
-	<h2>ALOUU MUNDOOO</h2>
+	<RouterView />
 </template>
 
 <style>
