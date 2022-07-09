@@ -42,8 +42,8 @@ import Location from "../assets/Location.svg";
 import Blog from "../assets/Blog.svg";
 
 declare interface GithubProps {
-	url: string;
-	client_secret: string;
+	readonly url: string;
+	readonly client_secret: string;
 }
 declare interface ProfileProps {
 	name: string;
@@ -80,7 +80,9 @@ export default {
 	data(): BaseComponentData {
 		return {
 			github: {
+				//@ts-ignore
 				url: import.meta.env.VITE_APP_API,
+				//@ts-ignore
 				client_secret: import.meta.env.VITE_APP_SECRET_KEY,
 			},
 			profile: {
